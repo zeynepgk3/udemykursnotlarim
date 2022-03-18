@@ -87,10 +87,14 @@ Merge made by the 'recursive' strategy.
 ## Conflicts
 lab7-main ve lab7-branch2, file1.txt üzerinde değişiklik yapıyor ve merge yapmaya çalışınca output:
 
-    Auto-merging git & github bootcamp/lab-7/file1.txt
-    CONFLICT (content): Merge conflict in git & github bootcamp/lab-7/file1.txt
-    Automatic merge failed; fix conflicts and then commit the result.
-    error: Merging is not possible because you have unmerged files.
+```js
+Auto-merging git & github bootcamp/lab-7/file1.txt
+CONFLICT (content): Merge conflict in git & github bootcamp/lab-7/file1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+error: Merging is not possible because you have unmerged files.
+```
+
+
 bunu çözmek için editörde seçenek çıkıyor ve istediğimiz gibi dosyayı güncelliyoruz. Sonra;
 
 ```js
