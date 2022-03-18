@@ -57,6 +57,34 @@ git reset --soft HEAD^
 ```
 Eğer son commitin değişikliklerini de silmek istiyorsak `--soft` yerine `--hard` kullanılır.
 
+## Recursive Merge vs Fast Forward Merge
+### Fast Forward
+Bu merge tipinde bir branch dallandıktan sonra mainde hiç yeni commit olmaz ve merge işlemi yapılır.
+### Recursive
+Recursivede ise branch dallandıktan sonra main branchinde değişiklikler olmuş
+![tree](/assets/lab7-merge.png "git tree after merge")
+```
+sözde main branch is lab7-main
+git checkout -b lab7-branch
+git add .
+//doing some changes
+git commit -m "fix bug"
+
+//go back to main
+git checkout lab7-main
+git add .
+//doing some changes
+git commit -m "main branch changed again"
+
+git merge lab7-branch
+```
+Output:
+```
+Merge made by the 'recursive' strategy.
+ git & github bootcamp/lab-7/file1.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+```
+
 
 
 
