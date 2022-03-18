@@ -3,3 +3,4 @@ everyone making something here in main
 branch doing changes
 
 main: branch gonna change this line but i want it to see conflict :)
+branch: i am a victim i dont know if someone messed up the line :(
