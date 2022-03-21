@@ -1,5 +1,5 @@
 # Bölüm 10
-
+# checkout
 ## Detached HEAD
 HEAD genelde bir brancin en son commitini gösterir demiştik. Eğer zamanda yolculuk yapıp belli bi commitin zamanına dönmek istersek;
     
@@ -24,3 +24,34 @@ Turn off this advice by setting config variable advice.detachedHead to false
 
 ## HEAD'i geri bağla
     git switch <branchAdi>
+
+### eski bir committen yeni bir branch oluşturabiliyoruz.
+![newbranch](/assets/lab10-detached-newbranch.PNG "eski committen dallanan branch")
+
+## commitlerin HEAD'e göre isimlendirmesi
+![commitsasheads](/assets/switch_branches_001.png "eski committen dallanan branch")
+Örneğin şu şekilde detached HEAD statüsüne girilebilir:
+    
+    git checkout HEAD~3
+
+Ana konuma gelmek istersek:
+    
+    git switch -
+
+## Değişiklikleri görmezden gelme
+    git checkout HEAD <fileName>
+    git checkout -- <fileName>
+Bu şekilde o dosyadaki değişiklikler kaldırılır ve HEAD konumuna geri dönülür.
+
+# restore
+checkout = switch + restore
+checkout bir sürü iş yaptığı için ikiye ayırmaya karar vermişler
+
+
+
+
+
+
+
+
+    
